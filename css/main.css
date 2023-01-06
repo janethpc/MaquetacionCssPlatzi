@@ -62,3 +62,6 @@ header .icons span{
     position:fixed;
     font-style: inherit;
 }
+nav{
+    display: grid;
+}
