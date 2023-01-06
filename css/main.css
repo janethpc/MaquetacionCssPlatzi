@@ -1,46 +1,37 @@
+@import url('https://fonts.googleapis.com/css2? familia= Roboto+Mono:ital,peso@0,400;0,700;1,500 &familia= Roboto+Losa:peso@400;700 &familia= Roboto:peso@300;400;900 & display=swap');
+
 body{
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: fixed; /*ayuda a que la primera vista quede sin scroll*/
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
 }
-
 a{
     text-decoration: none;
-    display: inline;
+    display: inline; /*los posiciona de manera horizontal*/
+    color: black;
 }
 
 header{
-    width: 100%;
+    width: 100%; /*para que valla de izquierda a derecha en un 100%*/
     height: 140px;
-    display: grid;
-    grid-template-rows: 1fr 1fr; /* dos filas y en el height es el alto*/
+    display: grid; /*para establecer el grid y se dividsa en dos filas los 1fr sonm fracciones*/
+    grid-template-rows: 1fr 1fr ;
 }
 
 header .header-icon-container{
     width: 100%;
-    height: 60px;
+    height: 50px; /*ya que el de arriba es el padre y tiene una medida de 140px*/
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    background-color: rgba(18, 213, 200, 0.955);
+    background-color: blueviolet;
 }
 
 header .header-icon-container .icons{
     width: 300px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    justify-self: end;
-    margin-right: 50px;
-}
-
-header .header-icon-container .header-span-container{
-    width: 300px;
-    height: auto;
+    height: auto; /*tang grande como su padre*/
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -48,20 +39,73 @@ header .header-icon-container .header-span-container{
     justify-self: end;
     margin-right: 50px;
 }
-
-header .icons img{
-    width: 30px;
-    height: auto;
-    padding: 0px;
-    padding-left: 20px;
-    margin-top: 1px;
-}
-
 header .icons span{
-    font-size: small;
-    position:fixed;
-    font-style: inherit;
+    color:rgb(248, 55, 248);
 }
+
 nav{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+nav .nav-logo-container{
+    margin-left: 50px;
+
+}
+
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+}
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .profile-link a{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url('../assets/img/Cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-main section{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+
+}
+.home-main-text{
+    font-size: 30px;
+    font-weight: 700px; /*ancho de la funete*/
+    letter-spacing: 10px;
+    color: rgb(248, 55, 248);
+    font-family: 'Roboto mono', monospace;
+    background-color: rgba(94, 88, 95, 0.774);
+}
+
+.home-main-button{
+    width: 110px;
+    height: 50px;
+    background: blue;
+    display: grid;
+    align-items: center;
+}
+
+.home-main-button a{
+    font-weight: 700;
+    font-size: 18px;
 }
