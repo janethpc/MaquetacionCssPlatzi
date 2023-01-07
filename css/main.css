@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2? familia= Roboto+Mono:ital,peso@0,400;0,700;1,500 &familia= Roboto+Losa:peso@400;700 &familia= Roboto:peso@300;400;900 & display=swap');
 
 body{
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
     position: fixed; /*ayuda a que la primera vista quede sin scroll*/
@@ -68,6 +69,7 @@ nav .profile-link{
 nav .profile-link a{
     color: black;
     border-bottom: 1px solid black;
+
 }
 
 .home-main{
@@ -108,4 +110,33 @@ nav .profile-link a{
 .home-main-button a{
     font-weight: 700;
     font-size: 18px;
+}
+
+.blogs-main {
+    display: grid;
+}
+
+.blogs-news-container{
+    background-color: #e6e9ed;
+    padding: 0 50px 40px; /*espacio interno que genera un contenedor y el margin es el espacio que hace un contenedor hacia afuera para poderlos alejar */
+}
+.blogs-main-new{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.blogs-news-img-container{
+    grid-column: 1;
+}
+.blogs-news-img-container img{
+   
+}
+
+.blogs-news-info-container{
+    grid-column: 2;
+
+}
+.blogs-news-info-container p{
+    margin-button: 35px;
 }
