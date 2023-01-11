@@ -190,3 +190,11 @@ footer p {
     color: white;
     margin-top: 30px;
 }
+
+.blogpost-img-container{
+    padding: 0 50px 40px; /*arriba sin espacio, 50 de ladod erecho izquierdo y 40 de la parte de abajo*/
+}
+
+.blogpost-img-container img{
+    
+}
