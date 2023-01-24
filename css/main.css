@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? familia= Roboto+Mono:ital,peso@0,400;0,700;1,500 &familia= Roboto+Losa:peso@400;700 &familia= Roboto:peso@300;400;900 & display=swap');
-
+/*BEM O BLOCK, ELEMENT, MODIFIER las siglas hacen alusion a como funciona su logica*/
 body{
     font-family: 'Roboto Mono', monospace;
     margin: 0;
@@ -236,4 +236,37 @@ footer p {
 
 .contact-main-container img{
     width: 100px;
+}
+
+.profile-main-container{
+    padding: 70px 40px;
+    background-color: #e6e9ed;
+    margin-bottom: 50px;
+}
+
+.profile-main-container img{
+    width: 320px ;
+    margin-right: 30px;
+}
+
+.profile-main-container .profile-container{
+    display: flex;
+}
+
+.profile-main-proyects{
+    padding: 0 50px 40px;
+}
+
+.profile-main-proyects h3{
+    border-bottom: 1px solid #cdd2da;
+    text-align: center;
+}
+
+.proyects-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.proyect-container{
+    padding: 0 5px;
 }
